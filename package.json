@@ -1,0 +1,25 @@
+{
+  "name": "lumpkin-studios",
+  "version": "1.0.0",
+  "description": "service site",
+  "engines": {
+    "node": "16.15.0",
+    "npm": "8.5.5"
+  },
+  "scripts": {
+    "start": "nodemon ./src/js/server.js",
+    "script": "node ./src/js/server.js"
+  },
+  "author": "Keanu Lumpkin",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.19",
+    "parcel": "^2.7.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.1",
+    "express": "^4.18.1",
+    "node": "^16.15.0",
+    "nodemailer": "^6.7.8"
+  }
+}
