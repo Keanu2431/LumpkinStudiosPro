@@ -198,3 +198,11 @@ h1 {
     transparent 90%
   );
 }
+/* cycle */
+.cycle-items {
+  display: flex;
+  justify-content: space-between;
+}
+.item {
+  width: 15%;
+}
