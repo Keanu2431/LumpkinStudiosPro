@@ -172,6 +172,29 @@ h1 {
   font-size: 36px;
   color: var(--secondary-blue);
 }
+/* advert */
 .advert {
+  display: block !important;
+  padding-top: 24px;
   width: fit-content;
+  margin: 0 auto !important;
+  text-align: right;
+}
+.advert > h1 > span {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+.highlight {
+  /* font-size: 72px !important; */
+  display: inline;
+  color: var(--fourth-blue);
+  padding-left: 12px;
+  padding-right: 24px;
+  background-image: linear-gradient(
+    112deg,
+    transparent 9%,
+    var(--primary-font-color) 9%,
+    var(--primary-font-color) 90%,
+    transparent 90%
+  );
 }
