@@ -151,6 +151,9 @@ h1 {
 .row-item > h4 {
   font-size: 24px;
 }
+.row-item > h3 {
+  font-weight: 900 !important;
+}
 .row-item > h2 {
   color: var(--secondary-blue);
   font-size: 28px;
@@ -162,4 +165,13 @@ h1 {
   justify-content: space-between;
   margin-bottom: 36px;
   margin-top: 36px;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48;
+  font-size: 36px;
+  color: var(--secondary-blue);
+}
+.advert {
+  width: fit-content;
 }
