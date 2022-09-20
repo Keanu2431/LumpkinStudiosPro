@@ -12,10 +12,16 @@ app.use(express.static('./src'));
 app.use(express.json());
 app.get(`/`, (req, res) => {
   console.log(__dirname, '1');
-  // res.sendFile(__dirname + './src/index.html');
+  res.sendFile(__dirname + './src/index.html');
 });
 app.get(`/contact`, (req, res) => {
-  console.log(req.route);
+  res.sendFile(__dirname + '/src/contact.html');
+});
+app.get(`/about`, (req, res) => {
+  res.sendFile(__dirname + '/src/about.html');
+});
+app.get(`/services`, (req, res) => {
+  res.sendFile(__dirname + '/src/services.html');
 });
 app.post(`/`, (req, res) => {
   console.log(req.body);

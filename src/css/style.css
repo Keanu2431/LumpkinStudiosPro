@@ -352,3 +352,63 @@ input {
   animation-duration: 2s;
   animation-fill-mode: forwards;
 }
+
+/* contact page */
+@keyframes jump {
+  0% {
+    position: relative;
+    bottom: 0px;
+  }
+
+  50% {
+    position: relative;
+    bottom: 36px;
+  }
+  100% {
+    position: relative;
+    bottom: 0px;
+  }
+}
+.icon {
+  width: 10%;
+}
+#left-contact {
+  width: 45% !important;
+}
+.contact-img {
+  margin-top: 7%;
+  width: 90%;
+  animation-name: jump;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+#contact-page {
+  padding-top: 5% !important;
+}
+/* services */
+.services {
+  padding-top: 5%;
+  background-color: var(--fourth-blue);
+}
+.services-middle {
+  text-align: center;
+}
+.services-middle > h4,
+h2 {
+  width: 50%;
+  margin: 0 auto;
+}
+.carousel-item {
+  /* height: 50vh; */
+  background-color: var(--fourth-blue);
+  margin: 0 auto !important;
+}
+.carousel-item > img {
+  height: 50vh;
+  width: 60% !important;
+  background-color: var(--fourth-blue);
+  margin: 0 auto !important;
+}
+.carousel-caption {
+  color: var(--primary-font-color) !important;
+}

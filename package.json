@@ -7,7 +7,7 @@
     "npm": "8.5.5"
   },
   "scripts": {
-    "start": "nodemon ./src/js/server.js",
+    "start": "nodemon server.js",
     "script": "node ./src/js/server.js"
   },
   "author": "Keanu Lumpkin",
