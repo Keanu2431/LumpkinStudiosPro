@@ -23,6 +23,7 @@ a {
   color: var(--primary-font-color) !important;
   background-color: var(--fourth-blue);
 }
+
 .btn {
   font-size: 24px !important;
   font-family: var(--font) !important;
@@ -404,11 +405,28 @@ h2 {
   margin: 0 auto !important;
 }
 .carousel-item > img {
-  height: 50vh;
-  width: 60% !important;
+  height: 400px;
+  width: 900px !important;
   background-color: var(--fourth-blue);
   margin: 0 auto !important;
 }
 .carousel-caption {
   color: var(--primary-font-color) !important;
+}
+.pricing-cont {
+  padding-top: 3%;
+  padding-bottom: 5%;
+  background-color: var(--fourth-blue);
+}
+.tier-item {
+  width: 25%;
+  text-align: center;
+  border: 6px solid var(--primary-font-color);
+  padding-bottom: 3%;
+  padding-top: 1%;
+}
+.prices {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
 }
