@@ -203,4 +203,5 @@ if (contactForm)
     };
 
     xhr.send(JSON.stringify(formObj));
+    contactForm.reset();
   });
