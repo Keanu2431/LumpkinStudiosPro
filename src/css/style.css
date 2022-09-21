@@ -443,7 +443,6 @@ h2 {
 
 .intro {
   padding-top: 2%;
-
   text-align: center;
 }
 .keywords {
@@ -490,4 +489,9 @@ div > h1 {
 }
 #btn-top:hover {
   background-color: var(--primary-font-color) !important;
+}
+.brief-text {
+  padding-top: 5%;
+  width: 80% !important;
+  text-align: center;
 }
