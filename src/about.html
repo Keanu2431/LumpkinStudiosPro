@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/x-icon" href="./images/cycle/colored.png" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LumpkinStudios</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/main.js" defer></script>
+    <script
+      type="text/javascript"
+      src="http://code.jquery.com/jquery-latest.min.js"
+    ></script>
+    <script>
+      $(window).on('load', function () {
+        $(window)
+          .scroll(function () {
+            var windowBottom = $(this).scrollTop() + $(this).innerHeight();
+            $('.fade').each(function () {
+              /* Check the location of each desired element */
+              var objectTop = $(this).offset().top;
+
+              /* If the element is completely within bounds of the window, fade it in */
+              if (objectTop < windowBottom) {
+                //object comes into view (scrolling down)
+                if ($(this).css('opacity') == 0) {
+                  $(this).fadeTo(200, 1);
+                }
+              } else {
+                //object goes out of view (scrolling up)
+                if ($(this).css('opacity') == 1) {
+                  $(this).fadeTo(200, 0);
+                }
+              }
+            });
+          })
+          .scroll(); //invoke scroll-handler on page-load
+      });
+      $('a').click(function () {
+        $('html, body').animate(
+          {
+            scrollTop: $($(this).attr('href')).offset().top,
+          },
+          5000
+        );
+        return false;
+      });
+    </script>
+  </head>
+  <body>
+    <nav class="header-nav">
+      <a class="nav-tag" href="/">LumpkinStudios</a>
+      <div>
+        <a class="nav-tag" href="/about">About</a>
+        <a class="nav-tag" href="/services">Services</a>
+        <a class="nav-tag" href="contact.html">contact</a>
+      </div>
+    </nav>
+    <div class="about-container">
+      <div class="about-top">
+        <h1 style="text-align: center">Who are we?</h1>
+        <div class="keywords middle fade">
+          <h1>team-based</h1>
+          <h1>commited</h1>
+        </div>
+        <div class="keywords fade">
+          <h1>Proactive</h1>
+          <h1>Client Driven</h1>
+          <h1>quality</h1>
+        </div>
+        <a href="/contact" style="text-decoration: none"
+          ><button
+            id="btn-top"
+            style="margin: 0 auto; display: block; text-decoration: none"
+            type="button"
+            class="btn btn-primary"
+          >
+            Work With Us
+          </button></a
+        >
+      </div>
+      <div class="about-middle">
+        <h1 class="intro fade">our partners love us</h1>
+        <div class="middle-keys fade">
+          <div class="key">
+            <h1>Our Foucs</h1>
+            <h2>is always you</h2>
+          </div>
+          <div class="key">
+            <h1>momentum</h1>
+            <h2>reach goals</h2>
+          </div>
+          <div class="key">
+            <h1>creativity</h1>
+            <h2>expressing yourself</h2>
+          </div>
+        </div>
+        <a href="/contact" style="text-decoration: none"
+          ><button
+            id="btn-mid"
+            style="margin: 0 auto; display: block; text-decoration: none"
+            type="button"
+            class="btn btn-primary"
+          >
+            Let's Create
+          </button></a
+        >
+      </div>
+    </div>
+  </body>
+</html>
