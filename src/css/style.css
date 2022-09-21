@@ -11,6 +11,19 @@
   --third-blue: #c2dff6;
   --fourth-blue: #f6fafe;
 }
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.fade-in {
+  animation-name: fadeIn;
+  animation-duration: 2.5s;
+  animation-fill-mode: forwards;
+}
 html,
 body {
   scroll-behavior: smooth;
@@ -234,6 +247,9 @@ h1 {
 .items > h2:hover {
   cursor: pointer;
 }
+.items > h2 {
+  text-align: center;
+}
 
 .cycle-expand {
   display: flex;
@@ -243,6 +259,7 @@ h1 {
 }
 .cycle-expand > img {
   width: 45%;
+  height: 500px;
   box-shadow: var(--third-blue) -12px 12px 12px;
   border-radius: 24px;
 }
